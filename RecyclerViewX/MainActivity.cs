@@ -10,12 +10,17 @@ using Android.Content;
 using Android.Views;
 using Android.Graphics.Drawables;
 using Android.Widget;
+using Android.Support.Design.Widget;
+using static Android.Support.V7.Widget.RecyclerView;
 
 namespace RecyclerViewX
 {
     [Activity(Label = "RecyclerViewX", MainLauncher = true, Theme = "@style/AppTheme")]
     public class MainActivity : AppCompatActivity
     {
+        private FloatingActionButton _fab;
+        private CoordinatorLayout _coordinatorLayout;
+
         public List<Person> _personsList { get; set; } = new List<Person>();
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -41,9 +46,43 @@ namespace RecyclerViewX
             pa.ButtonSendClick += Pa_ButtonSendClick;
             pa.ButtonCallClick += Pa_ButtonCallClick;
 
+            _fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            _fab.Click += MainActivity_Click;
+            _coordinatorLayout = FindViewById<CoordinatorLayout>(Resource.Id.mainLayout);
+
+
+
             rc.SetLayoutManager(lm);
             rc.SetAdapter(pa);
-        }     
+
+            //rc.AddOnScrollListener(new MyScrollListener(_fab));
+        }
+
+
+        public class MyScrollListener : OnScrollListener
+        {
+            private FloatingActionButton _fab { get; set; }
+            public MyScrollListener(FloatingActionButton fab) => this._fab = fab;
+
+            public override void OnScrolled(RecyclerView recyclerView, int dx, int dy)
+            {
+                if (dy > 0)
+                {
+                    _fab.Visibility = ViewStates.Invisible;
+                }
+                else
+                {
+                    _fab.Visibility = ViewStates.Visible;
+                }
+
+                base.OnScrolled(recyclerView, dx, dy);            
+            }
+        }
+
+        private void MainActivity_Click(object sender, EventArgs e)
+        {
+            Snackbar.Make(_coordinatorLayout, "FloatingActionButton Clicked", Snackbar.LengthLong).Show();
+        }
 
         private void Pa_ButtonCallClick(object sender, PersonAdapter.PersonClickEventArgs e)
         {

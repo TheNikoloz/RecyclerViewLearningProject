@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
-
-  <android.support.v7.widget.Toolbar
     android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:id="@+id/mainActionBar"
-    android:background="@color/colorPrimary">
-    
-  </android.support.v7.widget.Toolbar>
+  android:id="@+id/mainLayout">    
     <android.support.v7.widget.RecyclerView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:id="@+id/PersonsRecyclerView" />
-</LinearLayout>
+       
+        android:id="@+id/PersonsRecyclerView" 
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+  <android.support.design.widget.AppBarLayout
+  android:id="@+id/appBarLayout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/mainActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+  </android.support.design.widget.AppBarLayout>
+
+<android.support.design.widget.FloatingActionButton     
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fabMargin"
+        android:layout_marginBottom="@dimen/fabMargin"
+        android:clickable="true"
+        android:src="@mipmap/ic_add_white_24dp"
+        app:layout_anchor="@id/PersonsRecyclerView"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_behavior ="Cavea.FabHideScrollBehavior"/>
+</android.support.design.widget.CoordinatorLayout>

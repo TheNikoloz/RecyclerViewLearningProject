@@ -4,13 +4,16 @@
     <ManifestDocument>obj\Debug\__library_projects__\RoundedImageView\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\SwipeMaker\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\SwipeMaker\library_project_imports\aapt\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Arch.Lifecycle.Runtime\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Animated.Vector.Drawable\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Compat\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Constraint.Layout\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Core.UI\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Core.Utils\library_project_imports\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Fragment\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Media.Compat\library_project_imports\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.v4\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\AndroidManifest.xml</ManifestDocument>
@@ -24,6 +27,9 @@
     <Jar>obj\Debug\__library_projects__\Square.OkIO\library_project_imports\okio.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Square.Picasso\library_project_imports\picasso-2.5.2.jar</Jar>
     <Jar>obj\Debug\__library_projects__\SwipeMaker\library_project_imports\bin\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.Android.Arch.Core.Common\library_project_imports\arch-core-common.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.Android.Arch.Lifecycle.Common\library_project_imports\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.Android.Arch.Lifecycle.Runtime\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Animated.Vector.Drawable\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Annotations\library_project_imports\support-annotations.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Compat\library_project_imports\bin\classes.jar</Jar>
@@ -31,8 +37,10 @@
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Constraint.Layout.Solver\library_project_imports\constraint-layout-solver.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Core.UI\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Core.Utils\library_project_imports\bin\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Fragment\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Media.Compat\library_project_imports\bin\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.v4\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\bin\classes.jar</Jar>
     <Jar>obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\bin\classes.jar</Jar>
